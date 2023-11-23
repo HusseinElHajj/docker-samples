@@ -33,4 +33,4 @@ jobs:
       with:
         context: simple-spring-boot-rest-api
         push: true
-        tags: <username>/my-spring-boot-app:${{ env.DATE }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-spring-boot-app:${{ env.DATE }}
